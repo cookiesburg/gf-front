@@ -7,6 +7,7 @@ export function getScores(user) {
     const res = await fetch('https://golf-friends-api.herokuapp.com/api/v1/scores');
     const scores = await res.json();
     const userScores = scores.filter(score => score.user_id === user.id);
+    console.log(userScores);
     const handicap = calculateHandicap(userScores);
     return dispatch({
       type: 'GET_SCORES',
@@ -22,6 +23,7 @@ export function postScore(courseId, strokes, id, nine) {
       body: JSON.stringify({'score': {'strokes': strokes, 'user_id': id, 'course_id': courseId, 'isNine': nine}}),
     });
     const score = await res.json();
+    console.log(score, 'after json');
     return dispatch({
       type: 'POST_SCORE',
       data: score,
