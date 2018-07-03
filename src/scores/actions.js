@@ -19,7 +19,7 @@ export function postScore(courseId, strokes, id, nine) {
     const res = await fetch('https://golf-friends-api.herokuapp.com/api/v1/scores', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({'score': {'strokes': strokes, 'user_id': id, 'course_id': courseId, 'nine?': nine}}),
+      body: JSON.stringify({'score': {'strokes': strokes, 'user_id': id, 'course_id': courseId, 'isNine': nine}}),
     });
     const score = await res.json();
     return dispatch({
@@ -35,7 +35,6 @@ function calculateHandicap(scores) {
   };
 
   const diffs = scores.map(score => {
-    console.log(score);
     if (score.isNine === true) {
       return (score.strokes*2 - score.course.rating)*113 / score.course.slope ;
     } else {
