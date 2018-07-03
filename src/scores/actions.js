@@ -35,6 +35,7 @@ function calculateHandicap(scores) {
   };
 
   const diffs = scores.map(score => {
+    console.log(score);
     if (score.isNine === true) {
       return (score.strokes*2 - score.course.rating)*113 / score.course.slope ;
     } else {
