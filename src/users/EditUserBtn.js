@@ -78,17 +78,17 @@ const mapDispatchToProps = dispatch => bindActionCreators({
 export default connect(mapStateToProps, mapDispatchToProps)(EditUserBtn);
 
 const EditButton = styled.button`
-  background-color: gray;
+  background-color: var(--gray);
   border: none;
   border-radius: 8px;
   i {
     font-size: 22px;
     color: white;
-    background-color: gray;
+    background-color: var(--gray);
     padding: 10px;
 
     :hover {
-      color: var(--base);
+      color: var(--lightRed);
       cursor: pointer;
     }
   }

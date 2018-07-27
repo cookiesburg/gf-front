@@ -70,7 +70,7 @@ const Tile = styled.div`
   flex-direction: column;
   width: 180px;
   height: 220px;
-  background: gray;
+  background: var(--gray);
   cursor: default;
   justify-content: center;
   align-items: center;
@@ -81,11 +81,11 @@ const Tile = styled.div`
   transition: all .4s ease;
   border-radius: 8px;
     :hover {
-      box-shadow: 0 0 1rem var(--base);
+      box-shadow: 0 0 1rem #ccc;
     }
     i {
       cursor: pointer;
-      background: gray;
+      background: var(--gray);
       color: white;
     }
 
@@ -107,6 +107,7 @@ const UserForm = styled.form`
     font-size: 18px;
     font-weight: bold;
     border-radius: 3px;
+    padding: 40px;
   }
 
 `;

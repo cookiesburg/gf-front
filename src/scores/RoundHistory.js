@@ -91,7 +91,7 @@ const Display = styled.div`
     .scores {
       display: flex;
       flex-direction: column;
-      width: 120px;
+      width: 150px;
       height: 100%;
       flex-wrap: nowrap;
       overflow-x: auto;

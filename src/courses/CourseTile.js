@@ -35,13 +35,14 @@ margin-bottom: 10px;
 width: 500px;
 padding: 20px;
 font-family: karla;
-background-color: var(--base);
+background-color: var(--gray);
 color: white;
 display: flex;
 border-radius: 8px;
 
 :hover {
-  box-shadow: 0 0 1rem gray;
+  box-shadow: 0 0 1rem #ccc;
+  color: black;
 }
   .name {
     flex-grow: 4
@@ -53,13 +54,14 @@ border-radius: 8px;
   }
 
   div {
-    
+
     justify-content: right;
   }
 
   i {
     :hover {
       cursor: pointer;
+      color: var(--lightRed);
     }
   }
 `;

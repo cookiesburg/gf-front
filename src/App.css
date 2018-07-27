@@ -1,26 +1,16 @@
 
 :root {
-  --base: #2bce82;
+  --base: #2ede87;
   --black: #232927;
+  --gray: #ccc;
+  --lightGreen: #dbf9de;
+  --lightRed: #f9e0da;
 }
 
 .App {
   text-align: center;
 }
 
-.App-header {
-  background-color: var(--base);
-  height: 80px;
-  padding: 20px;
-  color: white;
-  letter-spacing: 3px;
-  margin-bottom: 2em;
-}
-
-.App-title {
-  font-size: 2em;
-  font-family: karla;
-}
 
 .App-intro {
   font-size: large;
@@ -63,7 +53,7 @@ a {
   text-decoration: none;
 }
 a:visited {
-  color: black;
+  color: white;
 }
 
 .submitButton {
@@ -91,28 +81,42 @@ td {
 }
 
 nav > a {
-  font-size: 16px;
-  padding: 12px;
-  letter-spacing: 1px;
+  font-size: 18px;
+  padding: 20px;
+  letter-spacing: 1.5px;
   font-family: karla;
   border-radius: 20px;
   font-weight: bold;
   background-color: var(--base);
-  color: green;
+  border: 5px solid var(--base);
+  margin-top: 30px;
+}
+nav > a:hover {
+  padding: 20px;
+  letter-spacing: 2px;
+  font-family: karla;
+  border-radius: 20px;
+  box-shadow: 0 0 3rem #ccc;
+  border: 5px solid var(--base);
+  color:black;
 }
 
 nav {
   display: flex;
-  margin-left: 72%;
   margin-bottom: 200px;
 }
 
 .userLink {
-  display: flex;
-  margin-left: 61%;
+  margin-left: 100px;
   margin-bottom: 200px;
 }
 
 .userLink > a {
-  background: gray;
+  margin-top: 0px;
+  color: white;
+}
+.userLink > a:hover {
+  color: white;
+  box-shadow: 0 0 3rem #ccc;
+  color:black;
 }

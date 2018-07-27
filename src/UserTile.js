@@ -54,7 +54,7 @@ const Tile = styled.div`
   flex-direction: column;
   width: 180px;
   height: 220px;
-  background: gray;
+  background: var(--gray);
   cursor: default;
   font-size: 25px;
   color: white;
@@ -64,7 +64,10 @@ const Tile = styled.div`
   border-radius: 8px;
   text-transform: uppercase;
     :hover {
-      box-shadow: 0 0 3rem gray;
+      box-shadow: 0 0 3rem #ccc;
+      .name {
+        color:black;
+      }
     }
     .topRow {
       width: 100%;
@@ -94,14 +97,17 @@ const Tile = styled.div`
          width: 40%;
          margin-bottom: 10px;
          font-size: 10px;
-         padding: 3px;
          border-radius: 8px;
          font-weight: bold;
-         border:3px solid gray;
+         border:1px solid var(--gray);
+         letter-spacing: .6px;
+         padding:5px;
 
          :hover {
            cursor: pointer;
-           background: var(--base);
+           background: var(--lightGreen);
+           letter-spacing: .9px;
+
          }
        }
     }
