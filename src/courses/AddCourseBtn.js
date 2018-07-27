@@ -73,17 +73,17 @@ export default connect(mapStateToProps, mapDispatchToProps)(AddCourseBtn);
 
 const CourseWrapper = styled.div`
 margin-bottom: 10px;
-width: 500px;
+width: 600px;
 padding: 20px;
 font-family: karla;
-background-color: var(--base);
+background-color: var(--gray);
 color: white;
 display: flex;
 justify-content: center;
 border-radius: 8px;
 
 :hover {
-  box-shadow: 0 0 1rem gray;
+  box-shadow: 0 0 1rem #ccc;
 }
 i {
   cursor: pointer;

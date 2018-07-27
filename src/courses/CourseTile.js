@@ -32,16 +32,19 @@ export default CourseTile;
 
 const CourseWrapper = styled.div`
 margin-bottom: 10px;
-width: 500px;
+width: 600px;
 padding: 20px;
 font-family: karla;
-background-color: var(--base);
+background-color: var(--gray);
 color: white;
 display: flex;
 border-radius: 8px;
+font-size: 24px;
+letter-spacing: 2px;
 
 :hover {
-  box-shadow: 0 0 1rem gray;
+  box-shadow: 0 0 1rem #ccc;
+  color: black;
 }
   .name {
     flex-grow: 4
@@ -53,13 +56,14 @@ border-radius: 8px;
   }
 
   div {
-    
+
     justify-content: right;
   }
 
   i {
     :hover {
       cursor: pointer;
+      color: var(--lightRed);
     }
   }
 `;

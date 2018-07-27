@@ -18,12 +18,17 @@ class UserList extends Component {
     return (
       <Fragment>
         <UsersContainer>
+          <LeftMargin>
+          </LeftMargin>
           <AddUserBtn />
           {users.map(user => <UserTile key={user.id} user={user} id={user.id} />)}
+          <RightMargin>
+            <nav>
+              <Link to='/courses'> COURSE LIST </Link>
+            </nav>
+
+          </RightMargin>
         </UsersContainer>
-        <nav>
-          <Link to='/courses'> COURSE LIST </Link>
-        </nav>
     </Fragment>
     );
   }
@@ -41,10 +46,18 @@ const mapDispatchToProps = dispatch => bindActionCreators({
 export default connect(mapStateToProps, mapDispatchToProps)(UserList);
 
 const UsersContainer = styled.div`
-  width: 62%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 50px;
-  margin-left:19%;
+  display: grid;
+  grid-template-columns: 27.5% 15% 15% 15% 27.5%;
+`;
+const LeftMargin = styled.div`
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 5;
+`;
+const RightMargin = styled.div`
+  grid-column-start: 6;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 5;
 `;

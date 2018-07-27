@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import UserList from './users/BUserList';
 import CourseList from './courses/CourseList';
+import Header from './Header';
 import { Provider } from 'react-redux';
 import rootReducer from './rootReducer';
 import { applyMiddleware, createStore } from 'redux';
@@ -28,9 +29,7 @@ class App extends Component {
     return (
       <Provider store={store}>
         <div className="App">
-          <header className="App-header">
-            <h1 className="App-title">GOLF FRIENDS</h1>
-          </header>
+          <Header />
           <Router>
             <Switch>
               <Route exact path='/' component={UserList} />

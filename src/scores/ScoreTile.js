@@ -8,6 +8,7 @@ export default class ScoreTile extends Component {
       <TileWrapper>
         <ScoreDis>{this.props.strokes}</ScoreDis>
         <Course>{this.props.course}</Course>
+        <Date>3/15</Date>
       </TileWrapper>
     );
   }
@@ -18,22 +19,30 @@ const TileWrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  justify-content: space-around;
   margin: 1px;
-  height: 24%;
-  border: 1px solid black;
+  height: 33%;
   font-weight: normal;
-  border-radius: 8px;
+  background-color: #eee;
 `;
 const ScoreDis = styled.div`
-  font-size: 30px;
+  font-size: 35px;
+  padding-top: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
 
 `;
 const Course = styled.div`
-  font-size: 10px;
+  padding-top: 15px;
+  font-size: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+`;
+const Date = styled.div`
+  padding-top: 10px;
+  font-size: 11px;
   display: flex;
   justify-content: center;
   align-items: center;
