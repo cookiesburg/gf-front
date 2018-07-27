@@ -32,13 +32,15 @@ export default CourseTile;
 
 const CourseWrapper = styled.div`
 margin-bottom: 10px;
-width: 500px;
+width: 600px;
 padding: 20px;
 font-family: karla;
 background-color: var(--gray);
 color: white;
 display: flex;
 border-radius: 8px;
+font-size: 24px;
+letter-spacing: 2px;
 
 :hover {
   box-shadow: 0 0 1rem #ccc;

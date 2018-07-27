@@ -17,9 +17,10 @@ export default Header;
 
 const Container = styled.div`
   display: grid;
-  grid-template-columns: 20px 50px 350px 1800px 200px;
-  height: 180px;
+  grid-template-columns: 23% 3% 25% 15% ;
+  height: 140px;
   color: white;
+  margin-top: 30px;
 
   h1 {
     font-size: 40px;
@@ -29,13 +30,13 @@ const Container = styled.div`
   }
 
   h4{
+    padding-top: 30px;
     color:black;
     letter-spacing: 2px;
-    padding-top: 30px;
   }
 
   i {
-    margin-top: 20px;
+    margin-top: 18px;
     font-size: 60px;
     color:var(--base);
   }

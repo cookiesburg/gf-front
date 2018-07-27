@@ -96,7 +96,7 @@ nav > a:hover {
   letter-spacing: 2px;
   font-family: karla;
   border-radius: 20px;
-  box-shadow: 0 0 3rem #ccc;
+  box-shadow: 0 0 1.5rem #ccc;
   border: 5px solid var(--base);
   color:black;
 }
@@ -117,6 +117,6 @@ nav {
 }
 .userLink > a:hover {
   color: white;
-  box-shadow: 0 0 3rem #ccc;
+  box-shadow: 0 0 1.5rem #ccc;
   color:black;
 }

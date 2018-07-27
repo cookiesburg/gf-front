@@ -64,7 +64,7 @@ const Tile = styled.div`
   border-radius: 8px;
   text-transform: uppercase;
     :hover {
-      box-shadow: 0 0 3rem #ccc;
+      box-shadow: 0 0 1.5rem #ccc;
       .name {
         color:black;
       }

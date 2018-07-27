@@ -73,7 +73,7 @@ export default connect(mapStateToProps, mapDispatchToProps)(AddCourseBtn);
 
 const CourseWrapper = styled.div`
 margin-bottom: 10px;
-width: 500px;
+width: 600px;
 padding: 20px;
 font-family: karla;
 background-color: var(--gray);

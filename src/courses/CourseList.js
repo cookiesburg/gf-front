@@ -45,7 +45,7 @@ export default connect(mapStateToProps, mapDispatchToProps)(CourseList);
 
 const CourseWrapper = styled.div`
   display: grid;
-  grid-template-columns: 32% 34% 32%;
+  grid-template-columns: 27% 40% 32%;
   margin-top: 50px;
   width: 100%;
   margin-bottom: 30px;
